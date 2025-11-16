@@ -4,12 +4,18 @@
 
 ### 下载交叉编译工具链
 
-访问：[GNU Toolchains for ARM Embedded](https://gnutoolchains.com/arm-eabi/openocd/)
+访问：[GNU Toolchains for ARM Embedded](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
+
+```bash
+mkdir -p ~/opts/arm-toolchain
+wget https://developer.arm.com/-/media/Files/downloads/gnu/14.3.rel1/binrel/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi.tar.xz
+tar -xf arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi.tar.xz -C ~/opts/arm-toolchain 
+```
 
 安装完成后，将路径添加到环境变量中：
 
 ```bash
-echo 'export PATH="$HOME/opts/arm-toolchain/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/opts/arm-toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -174,6 +180,7 @@ continue
 ## VSCode 调试配置
 
 > ⚠️ 注意：Cortex-Debug 插件在某些环境下稳定性不佳，因此这里使用 `Attach` 方式直接连接已运行的 OpenOCD 服务器（依旧依赖Cortex-Debug）。
+> 目前在笔记本上调试正确，但是在台式电脑中一直出现`Failed to launch OpenOCD GDB Server: Timeout.`
 
 ```json
 {
