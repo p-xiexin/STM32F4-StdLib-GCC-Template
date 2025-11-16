@@ -236,8 +236,10 @@ C/C++ 插件虽方便，但在交叉编译环境下容易出现头文件、宏�
 
 示例 `.clangd` 配置：
 
+```clangd
 CompileFlags:
 
   Remove: ["-mthumb-interwork"]
+```
 
 > 说明：STM32F4 工程中 `-mthumb-interwork` 可被移除以避免 Clangd 报告不必要的警告。
