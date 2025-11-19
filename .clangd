@@ -1,2 +1,7 @@
 CompileFlags:
   Remove: ["-mthumb-interwork"]
+  # Compiler: $HOME/opts/arm-toolchain/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin
+  Compiler: C:/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
+
+Diagnostics:
+  Suppress: [unused-includes]
