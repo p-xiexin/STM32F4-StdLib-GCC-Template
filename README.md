@@ -243,3 +243,8 @@ CompileFlags:
 ```
 
 > 说明：STM32F4 工程中 `-mthumb-interwork` 可被移除以避免 Clangd 报告不必要的警告。
+
+## 参考
+[1.3.1 gcc-arm-none-eabi 交叉编译工具安装](https://www.bilibili.com/video/BV1RJ41127jY/?share_source=copy_web&vd_source=eac89beacf4b5ecfa9a66e7ebc9bd301)
+[从零开始制作RoboMaster步兵机器人-3.开发环境搭建](https://www.bilibili.com/video/BV12R4y1Q7ic/?share_source=copy_web&vd_source=eac89beacf4b5ecfa9a66e7ebc9bd301)
+[10分钟轻松掌握STM32开发CMake知识](https://www.bilibili.com/video/BV11x4y1x7U1/?share_source=copy_web&vd_source=eac89beacf4b5ecfa9a66e7ebc9bd301)
